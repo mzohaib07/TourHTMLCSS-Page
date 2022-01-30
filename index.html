@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Tour Website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <h1>TOUR</h1>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Tours</a> </li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./images/img_nature_wide.jpg" style="width: 100%" />
+            <section class="text">
+                <div class="heading-section">
+                    <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                    <h1>Our Travel Agency</h1>
+                </div>
+            </section>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/img_snow_wide.jpg" style="width: 100%" />
+            <section class="text">
+                <div class="heading-section">
+                    <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                    <h1>Our Travel Agency</h1>
+                </div>
+            </section>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/img_mountains_wide.jpg" style="width: 100%" />
+            <section class="text">
+                <div class="heading-section">
+                    <h4>EXPLORE OUR MOST TRAVEL AGENCY</h4>
+                    <h1>Our Travel Agency</h1>
+                </div>
+            </section>
+        </div>
+    </div>
+    <br />
+
+    <div class="dot-controller">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- <section class="tab-links">
+            <div class="tab-class">
+                <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+                <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+                <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+                <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+            </div>
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+        </div>
+
+        <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+    </section> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

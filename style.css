@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -14px;
+}
+.logo-container h1 {
+  width: 10%;
+  height: 100px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 30px 0 0 80px;
+  cursor: pointer;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-items ul li {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-items ul li a:hover {
+  color: yellow;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  height: 80vh;
+}
+.slideshow-container {
+  z-index: -1;
+  position: relative;
+  bottom: 176px;
+  margin: auto;
+  width: 100%;
+}
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+}
+.heading-section h4 {
+  letter-spacing: 3px;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+}
+.heading-section h1 {
+  letter-spacing: 3px;
+  font-size: 70px;
+}
+.dot-controller {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  top: -300px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.tab-links{
+    position: absolute;
+    top: 812px;
+}
+.tab-class{
+  position: absolute;
+  top: 0;
+  bottom: 60px;
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 67px 20px;
+  height: 100%;
+  width: 98vw;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
